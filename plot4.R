@@ -10,7 +10,7 @@ with(interest_data,plot(Global_active_power~datetime, xlab="",
                         ylab="Global Active Power (kilowatts)",type="l"))
 
 with(interest_data,{plot(Sub_metering_1~datetime, xlab="",
-                         ylab="Global Active Power (kilowatts)",type="l",col="black")
+                         ylab="Energy sub metering",type="l",col="black")
     lines(Sub_metering_2~datetime,col="red")
     lines(Sub_metering_3~datetime,col="blue")})
 legend("topright",col=c("black","red","blue"),lty=1,lwd=2,

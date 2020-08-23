@@ -7,7 +7,7 @@ png("plot3.png", width=480, height=480)
 par(mfrow=c(1,1))
 datetime <- as.POSIXct(strptime(paste(interest_data$Date,interest_data$Time), "%d/%m/%Y %H:%M:%S"))
 with(interest_data,{plot(Sub_metering_1~datetime, xlab="",
-                        ylab="Global Active Power (kilowatts)",type="l",col="black")
+                        ylab="Energy sub metering",type="l",col="black")
                     lines(Sub_metering_2~datetime,col="red")
                     lines(Sub_metering_3~datetime,col="blue")})
 legend("topright",col=c("black","red","blue"),lty=1,lwd=2,
